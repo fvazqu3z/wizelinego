@@ -1,9 +1,9 @@
 # Golang 
 
-_Demo of an API with 
-	"Hello World" message 
-	CRUD Customer in Java/Spring Boot
-	Proxy to Pokemon API (Reply request to Pokemon API and return an STRING in JSON format with the resul)_
+### Demo of an API with  
+_"Hello World" message_   
+_CRUD Customer in Java/Spring Boot_  
+_Proxy to Pokemon API (Reply request to Pokemon API and return an STRING in JSON format with the resul)_
 
 ## Starting 🚀
 
@@ -12,7 +12,7 @@ _These instruction allow you run the API and test in your local machine._
 
 ### Pre-requisitos 📋
 
-_Java 11+
+_Java 11+_
 
 These dependencies are inside gradle configuration
 
@@ -22,8 +22,8 @@ _org.springframework.boot:spring-boot-starter-data-rest_
 _org.springframework.boot:spring-boot-starter-validation_
 _org.springframework.boot:spring-boot-devtools_
 _org.springframework.boot:spring-boot-starter-test_
--H2 in memory Database-
--Tomcat Web Server-
+_H2 in memory Database_
+_Tomcat Web Server_
 
 ### Installation 🔧
 
@@ -41,22 +41,33 @@ _H2 Database available at 'jdbc:h2:mem:golangdb'_
 
 ## Testing ⚙️
 
-You can accese the api in these URLs
+_You can accese the api in these URLs_
 
+_* Display "Hello World Golang" Message_  
+_GET   	http://localhost:8080/api/v1/messages/_     			  	
+_* Get all Customers_  
+_GET   	http://localhost:8080/api/v1/customers/_				
+_* Get the Customer that math the ID_  
+_GET   	http://localhost:8080/api/v1/customers/{customerId}_  		
+_* Create new Customer_  
+_POST  	http://localhost:8080/api/v1/customers/_  					
+_* Update Customer_  
+_PUT   	http://localhost:8080/api/v1/customers/_  					
+_* Change Status to FALSE_  
+_DELETE	http://localhost:8080/api/v1/customers/{customerId}_  		
 
-GET   	http://localhost:8080/api/v1/messages/				  	* Display "Hello World Golang" Message
-​GET   	http://localhost:8080/api/v1/customers/					* Get all Customers
-GET   	http://localhost:8080/api/v1/customers/{customerId}			* Get the Customer that math the ID
-POST  	http://localhost:8080/api/v1/customers/					* Create new Customer
-PUT   	http://localhost:8080/api/v1/customers/					* Update Customer
-DELETE	http://localhost:8080/api/v1/customers/{customerId}			* Change Status to FALSE
-	
-	
-GET	http://localhost:8080/api/v2/pokemons/limit{limit}/offset/{offset}	*
-GET	http://localhost:8080/api/v2/pokemon/pokemonid/{id}
-GET	http://localhost:8080/api/v2/pokemon/{name}
-GET	http://localhost:8080/api/v2/type/{type}
-GET	http://localhost:8080/api/v2/ability/{ability}	
+_Pokemon API Proxy_
+
+_*Get all pokemons (limmit = quantity , offset = position)_
+_GET	http://localhost:8080/api/v2/pokemons/limit/{limit}/offset/{offset}_  	
+_* Get pokemons filtered by id_    
+_GET	http://localhost:8080/api/v2/pokemon/pokemonid/{id}_    
+_* Get pokemon filtered by name_  
+_GET	http://localhost:8080/api/v2/pokemon/{name}_    
+_* Get pokemons filtered by type_  
+_GET	http://localhost:8080/api/v2/type/{type}_  
+_* Get pokemons filtered by ability_  
+_GET	http://localhost:8080/api/v2/ability/{ability}_    	
 
 
 _The API documentaion in in the following URL https://documenter.getpostman.com/view/13208746/TVYDeKk8#e6cce4d8-0339-43a7-af4b-d5250e2193d5_
@@ -84,7 +95,7 @@ Select 5,'yessica','gomez ascensio','yessica@hotmail.com','3333333333','33333333
 
 ###  🔩
 
-_The Project include unit test , are separated by controller _
+_The Project include unit test , are separated by controller_
 
 ```
 CustomerController =  CRUD of Customer
@@ -94,7 +105,7 @@ The pokemon API only return the same the original API. Because it can change fre
 
 ## Deploy 📦
 
-_ You can run the api in all OS _
+_You can run the api in all OS_
 
 ## Tools 🛠️
 
