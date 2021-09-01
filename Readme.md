@@ -16,14 +16,14 @@ _Java 11+_
 
 These dependencies are inside gradle configuration
 
-_Spring Boot 2.5.4_
-_org.springframework.boot:spring-boot-starter-data-jpa_
-_org.springframework.boot:spring-boot-starter-data-rest_
-_org.springframework.boot:spring-boot-starter-validation_
-_org.springframework.boot:spring-boot-devtools_
-_org.springframework.boot:spring-boot-starter-test_
-_H2 in memory Database_
-_Tomcat Web Server_
+_Spring Boot 2.5.4_  
+_org.springframework.boot:spring-boot-starter-data-jpa_   
+_org.springframework.boot:spring-boot-starter-data-rest_  
+_org.springframework.boot:spring-boot-starter-validation_  
+_org.springframework.boot:spring-boot-devtools_  
+_org.springframework.boot:spring-boot-starter-test_  
+_H2 in memory Database_  
+_Tomcat Web Server_  
 
 ### Installation 🔧
 
